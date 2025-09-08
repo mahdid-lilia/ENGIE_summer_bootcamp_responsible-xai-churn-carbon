@@ -14,33 +14,37 @@ It also integrates **carbon footprint tracking** to align with **Responsible AI*
   Understanding *why* customers churn helps businesses improve retention strategies, optimize pricing, and design targeted offers.
 
 - **Responsible AI Focus:**  
-  - Ensure transparency and interpretability in model decisions.
-  - Evaluate and track the **environmental impact** of model training.
-  - Support compliance with frameworks like the **EU AI Act** and **GDPR**.
+  - Ensure transparency and interpretability in model decisions.  
+  - Evaluate and track the **environmental impact** of model training.  
+  - Support compliance with frameworks like the **EU AI Act** and **GDPR**.  
 
 ---
 
-## 🛠 Models & Techniques
+## 🛠 Environment, Models & Techniques  
 
-- **Models Used:**
-  - Multi-Layer Perceptron (**MLP**)
-  - **Random Forest** Classifier (with class-weighting for imbalance)
+- **Environment:**  
+  - Python **3.12.3**  
+  - [CodeCarbon 3.0.1](https://mlco2.github.io/codecarbon/) for carbon footprint monitoring  
 
-- **Explainability Tools:**
+- **Models Used:**  
+  - Multi-Layer Perceptron (**MLP**)  
+  - **Random Forest** Classifier (with class-weighting for imbalance)  
+
+- **Explainability Tools:**  
   - **Global Explanations:**  
     - Permutation Feature Importance  
     - SHAP Summary Plots  
-    - Partial Dependence Plots (PDPs)
+    - Partial Dependence Plots (PDPs)  
   - **Local Explanations:**  
     - SHAP Waterfall Plots  
     - LIME Local Explanations  
-    - Gauge Indicators (customer-level churn risk visualization)
+    - Gauge Indicators (customer-level churn risk visualization)  
   - **Interactive Dashboards:**  
-    - [Shapash](https://github.com/MAIF/shapash) for interactive XAI reports
+    - [Shapash](https://github.com/MAIF/shapash) for interactive XAI reports  
 
-- **Carbon Footprint Monitoring:**
-  - [CodeCarbon](https://mlco2.github.io/codecarbon/) to measure CO₂ emissions during model training.
-  - Power usage breakdown (CPU, GPU, RAM) for each training run.
+- **Carbon Footprint Monitoring:**  
+  - [CodeCarbon](https://mlco2.github.io/codecarbon/) to measure CO₂ emissions during model training.  
+  - Power usage breakdown (CPU, GPU, RAM) for each training run.  
 
 ---
 
@@ -48,25 +52,25 @@ It also integrates **carbon footprint tracking** to align with **Responsible AI*
 
 **Source:** [Telco Customer Churn Dataset – Kaggle](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)  
 
-- **Numerical Features:** `tenure`, `MonthlyCharges`, `TotalCharges`
-- **Categorical Features:** `Contract`, `InternetService`, `PaymentMethod`, `TechSupport`, etc.
-- **Target Variable:** `Churn` (Yes/No)
-- **Challenges Addressed:**
-  - Handling missing values in `TotalCharges`
-  - Encoding multiple categorical variables
-  - Managing class imbalance with weighted models
+- **Numerical Features:** `tenure`, `MonthlyCharges`, `TotalCharges`  
+- **Categorical Features:** `Contract`, `InternetService`, `PaymentMethod`, `TechSupport`, etc.  
+- **Target Variable:** `Churn` (Yes/No)  
+- **Challenges Addressed:**  
+  - Handling missing values in `TotalCharges`  
+  - Encoding multiple categorical variables  
+  - Managing class imbalance with weighted models  
 
 ---
 
 ## 🌍 Responsible AI & Sustainability
 
-This project aligns with ENGIE’s **Responsible AI** strategy:
-- **Explainability** — making model predictions interpretable for all stakeholders.
-- **Fairness** — reducing bias by examining feature impact.
-- **Transparency** — providing full visibility into model decision logic.
-- **Sustainability** — measuring and reducing the carbon footprint of AI.
+This project aligns with ENGIE’s **Responsible AI** strategy:  
+- **Explainability** — making model predictions interpretable for all stakeholders.  
+- **Fairness** — reducing bias by examining feature impact.  
+- **Transparency** — providing full visibility into model decision logic.  
+- **Sustainability** — measuring and reducing the carbon footprint of AI.  
 
-By combining **XAI** with **carbon tracking**, we ensure that our models are not only *accurate and fair*, but also *energy-conscious*.
+By combining **XAI** with **carbon tracking**, we ensure that our models are not only *accurate and fair*, but also *energy-conscious*.  
 
 ---
 
@@ -87,3 +91,7 @@ By combining **XAI** with **carbon tracking**, we ensure that our models are not
    ```bash
    git clone <repo_url>
    cd <repo_folder>
+2. **Install dependencies**
+    ```
+    pip install -r requirements.txt
+    ```
